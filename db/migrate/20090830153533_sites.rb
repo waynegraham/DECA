@@ -10,11 +10,10 @@ class Sites < ActiveRecord::Migration
     end
   end
   
-  Say "Create Sites table"
-  suppress_messages { add_index :sites, :name }
-  say "add and index!", true
+  #Say "Created Sites table"
+  #suppress_messages { add_index :sites, :name }
+  #Say "add and index!", true
   
-
   def self.down
     drop_table :sites
   end
