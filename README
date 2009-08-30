@@ -21,6 +21,10 @@ This application makes use of the PostGIS extensions for PostgreSQL. Assuming yo
 
 sudo port install postgresql83 postgresql83-server postgresql83-doc postgis
 
+If you run into a problem, upgrade your outdated packages
+
+sudo port upgrade outdated
+
 == Configuring PostgreSQL
 Once PostgreSQL and PostGIS are installed, you need to create a new database instance
 
