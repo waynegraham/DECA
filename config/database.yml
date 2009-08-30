@@ -12,8 +12,9 @@ development:
   adapter: postgresql
   encoding: unicode
   database: deca_development
+  template: template_postgis
   pool: 5
-  username: deca
+  username: postgres
   password:
 
   # Connect on a TCP socket. Omitted by default since the client uses a
@@ -38,6 +39,7 @@ test:
   adapter: postgresql
   encoding: unicode
   database: deca_test
+  template: template_postgis
   pool: 5
   username: deca
   password:
@@ -46,6 +48,7 @@ production:
   adapter: postgresql
   encoding: unicode
   database: deca_production
+  template: template_postgis
   pool: 5
   username: deca
   password:
