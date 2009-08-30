@@ -15,6 +15,42 @@ Need PostGIS...
 3. Go to http://localhost:3000/ and get "Welcome aboard: You're riding the Rails!"
 4. Follow the guidelines to start developing your application
 
+== PostGIS
+
+This application makes use of the PostGIS extensions for PostgreSQL. Assuming you have ports installed in OS X, you can install PostgreSQL and PostGIS with
+
+sudo port install postgresql83 postgresql83-server postgresql83-doc postgis
+
+== Configuring PostgreSQL
+Once PostgreSQL and PostGIS are installed, you need to create a new database instance
+
+sudo mkdir -p /opt/local/var/db/postgresql83/defaultdb
+ sudo chown postgres:postgres /opt/local/var/db/postgresql83/defaultdb
+ sudo su postgres -c '/opt/local/lib/postgresql83/bin/initdb -D /opt/local/var/db/postgresql83/defaultdb'
+
+If you'd like PostgreSQL to launch automatically when you system boots you need to add it to luanchd. 
+
+sudo launchctl load -w /Library/LaunchDaemons/org.macports.postgresql83-server.plist
+
+Alternatively, you can start the server by running
+
+/opt/local/lib/postgresql83/bin/postgres -D /opt/local/var/db/postgresql83/defaultdb
+
+or 
+
+/opt/local/lib/postgresql83/bin/pg_ctl -D /opt/local/var/db/postgresql83/defaultdb -l logfile start
+
+==== Adding PostgreSQL to your $PATH
+You'll need to add the PostgreSQL binaries to your $PATH. This should be done for all users in the /etc/profile file.
+
+mate /etc/profile
+
+Edit the line with PATH in it to include the path to postgresql. It will look something like this:
+
+export PATH=/opt/local/bin:/opt/local/sbin:/opt/local/lib/postgresql83/bin:$PATH
+
+
+
 
 == Web Servers
 
