@@ -39,7 +39,7 @@ port edit postgis
 
 and change the checksum line to read
 
-checksum	sha1 665abd2869e5c59140ed30c20ba1970ea3880fd4
+checksums		sha1 665abd2869e5c59140ed30c20ba1970ea3880fd4
 
 then rerun the port install
 
@@ -81,6 +81,10 @@ To install the postgresql gem, you'll need to point it to the proper arch type:
 
 sudo env ARCHFLAGS="-arch i386" gem install postgres
 
+or
+
+sudo env ARCHFLAGS="-arch x86_86" gem install postgres
+
 ==== PostgreGIS template
 
 If you don't have a PostGIS database, you'll want to set it up and add to the database.yml file
@@ -99,6 +103,7 @@ GRANT SELECT, UPDATE, INSERT, DELETE ON TABLE public.geometry_columns TO PUBLIC;
 GRANT SELECT, UPDATE, INSERT, DELETE ON TABLE public.spatial_ref_sys TO PUBLIC;
 VACUUM FULL FREEZE;
 EOS
+exit
 
 Now make sure your geospatially enabled database template is referenced in your database.yml file with "template"
 
