@@ -33,7 +33,7 @@ if defined? Geokit
 	# usage tied to an account, the value should be set to username:password.
 	# See http://geocoder.us
 	# and http://geocoder.us/user/signup
-	Geokit::Geocoders::geocoder_us = wayne_graham:XMBtJjH7 
+	Geokit::Geocoders::geocoder_us = 'wayne_graham:XMBtJjH7'
 
 	# This is your authorization key for geocoder.ca.
 	# To use the free service, the value can be set to nil or false.  For 
