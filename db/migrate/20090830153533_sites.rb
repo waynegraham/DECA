@@ -4,6 +4,8 @@ class Sites < ActiveRecord::Migration
       t.column :name, :string, :null => false
       t.column :geom, :point, :null => true, :srid => 4326, :with_z => true
       t.column :description, :text
+      t.column :lat, :decimal, :precision => 15, :scale => 10
+      t.column :lon, :decimal, :precision => 15, :scale => 10
       
       t.timestamps
       

@@ -248,3 +248,133 @@ Processing MapController#index (for 127.0.0.1 at 2009-08-30 18:40:26) [GET]
 Rendering template within layouts/application
 Rendering map/index
 Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/map]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing MapController#index (for 127.0.0.1 at 2009-08-31 08:59:03) [GET]
+Rendering template within layouts/application
+Rendering map/index
+Completed in 95ms (View: 93, DB: 0) | 200 OK [http://localhost/map]
+/!\ FAILSAFE /!\  Mon Aug 31 20:42:21 -0400 2009
+  Status: 500 Internal Server Error
+  FATAL:  database "deca_development" does not exist
+
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/postgresql_adapter.rb:950:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/postgresql_adapter.rb:950:in `connect'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/postgresql_adapter.rb:950:in `connect'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/postgresql_adapter.rb:210:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `new'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `send'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/monitor.rb:242:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:9:in `cache'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:28:in `call'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.3/lib/action_controller/params_parser.rb:15:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.3/lib/action_controller/session/cookie_store.rb:93:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.3/lib/action_controller/reloader.rb:29:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.3/lib/action_controller/failsafe.rb:26:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:106:in `call'
+    /Library/Ruby/Gems/1.8/gems/rails-2.3.3/lib/rails/rack/static.rb:31:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+    /Library/Ruby/Gems/1.8/gems/rails-2.3.3/lib/rails/rack/log_tailer.rb:17:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/chunked.rb:15:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:61:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:34:in `run'
+    /Library/Ruby/Gems/1.8/gems/rails-2.3.3/lib/commands/server.rb:111
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing MapController#index (for 127.0.0.1 at 2009-08-31 20:44:50) [GET]
+Rendering template within layouts/application
+Rendering map/index
+Completed in 30ms (View: 28, DB: 0) | 200 OK [http://localhost/map]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing MapController#index (for 127.0.0.1 at 2009-08-31 20:45:02) [GET]
+Rendering template within layouts/application
+Rendering map/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/map]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPGError: ERROR: table "sites" does not exist
+: DROP TABLE "sites"[0m
+  [4;35;1mSQL (12.0ms)[0m   [0mCREATE TABLE sites ("id" serial primary key, "name" character varying(255) NOT NULL, "description" text, "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;36;1mSQL (49.6ms)[0m   [0;1mSELECT AddGeometryColumn('sites','geom',4326,'POINT',3)[0m
+  [4;35;1mSQL (132.4ms)[0m   [0mCREATE INDEX index_sites_on_geom ON sites USING GIST (geom GIST_GEOMETRY_OPS)[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mCREATE INDEX "index_sites_on_name" ON "sites" ("name")[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mCREATE TABLE schema_migrations ("version" character varying(255) NOT NULL) [0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20090830170844')[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20090830153533')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-04 16:23:15) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"8pmgUSFQtaG2AHL7k/BM2H3PbgxEkT+jO2CAASNmR9I="}
+
+ActionController::RoutingError (No route matches "/locations" with {:method=>:post}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+WARNING: geokit-rails requires the Geokit gem. You either don't have the gem installed,
+or you haven't told Rails to require it. If you're using a recent version of Rails: 
+  config.gem "geokit" # in config/environment.rb
+and of course install the gem: sudo gem install geokit
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+WARNING: geokit-rails requires the Geokit gem. You either don't have the gem installed,
+or you haven't told Rails to require it. If you're using a recent version of Rails: 
+  config.gem "geokit" # in config/environment.rb
+and of course install the gem: sudo gem install geokit
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m

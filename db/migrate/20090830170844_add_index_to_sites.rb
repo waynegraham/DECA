@@ -6,6 +6,6 @@ class AddIndexToSites < ActiveRecord::Migration
 
   def self.down
     remove_index :sites, :geom
-    remove_index :sties, :name
+    remove_index :sites, :name
   end
 end
