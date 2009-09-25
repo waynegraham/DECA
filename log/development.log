@@ -987,3 +987,171 @@ Processing SitesController#index (for 127.0.0.1 at 2009-09-25 08:22:03) [GET]
 Rendering template within layouts/application
 Rendering sites/index
 Completed in 52ms (View: 36, DB: 5) | 200 OK [http://localhost/sites]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing MapController#index (for 127.0.0.1 at 2009-09-25 08:27:33) [GET]
+Rendering template within layouts/application
+Rendering map/index
+Completed in 6ms (View: 2, DB: 0) | 200 OK [http://localhost/map]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing SitesController#show (for 127.0.0.1 at 2009-09-25 08:29:13) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mSite Load (3.7ms)[0m   [0;1mSELECT * FROM "sites" WHERE ("sites"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering sites/show
+Completed in 32ms (View: 12, DB: 4) | 200 OK [http://localhost/sites/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing SitesController#show (for 127.0.0.1 at 2009-09-25 08:33:05) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSite Load (3.7ms)[0m   [0mSELECT * FROM "sites" WHERE ("sites"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering sites/show
+Completed in 26ms (View: 6, DB: 4) | 200 OK [http://localhost/sites/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing SitesController#sites (for 127.0.0.1 at 2009-09-25 08:33:06) [GET]
+  Parameters: {"id"=>"georss"}
+
+ActionController::UnknownAction (No action responded to sites. Actions: create, destroy, edit, index, new, show, and update):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing SitesController#show (for 127.0.0.1 at 2009-09-25 08:35:02) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mSite Load (3.7ms)[0m   [0;1mSELECT * FROM "sites" WHERE ("sites"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering sites/show
+Completed in 26ms (View: 6, DB: 4) | 200 OK [http://localhost/sites/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing SitesController#show (for 127.0.0.1 at 2009-09-25 08:35:19) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSite Load (3.7ms)[0m   [0mSELECT * FROM "sites" WHERE ("sites"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering sites/show
+Completed in 26ms (View: 6, DB: 4) | 200 OK [http://localhost/sites/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing SitesController#sites (for 127.0.0.1 at 2009-09-25 08:35:20) [GET]
+  Parameters: {"id"=>"georss"}
+
+ActionController::UnknownAction (No action responded to sites. Actions: create, destroy, edit, index, new, show, and update):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing SitesController#show (for 127.0.0.1 at 2009-09-25 08:35:20) [GET]
+  Parameters: {"id"=>"kml"}
+  [4;36;1mSite Load (0.6ms)[0m   [0;1mSELECT * FROM "sites" WHERE ("sites"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Site with ID=kml):
+  app/controllers/sites_controller.rb:17:in `show'
+
+Rendered rescues/_trace (61.6ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing SitesController#show (for 127.0.0.1 at 2009-09-25 08:41:50) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSite Load (3.7ms)[0m   [0mSELECT * FROM "sites" WHERE ("sites"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering sites/show
+Completed in 26ms (View: 6, DB: 4) | 200 OK [http://localhost/sites/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing SitesController#sites (for 127.0.0.1 at 2009-09-25 08:41:52) [GET]
+  Parameters: {"id"=>"georss"}
+
+ActionController::UnknownAction (No action responded to sites. Actions: create, destroy, edit, index, new, show, and update):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing SitesController#show (for 127.0.0.1 at 2009-09-25 08:41:52) [GET]
+  Parameters: {"id"=>"kml"}
+  [4;36;1mSite Load (0.6ms)[0m   [0;1mSELECT * FROM "sites" WHERE ("sites"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Site with ID=kml):
+  app/controllers/sites_controller.rb:17:in `show'
+
+Rendered rescues/_trace (64.6ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing SitesController#show (for 127.0.0.1 at 2009-09-25 08:41:52) [GET]
+  Parameters: {"SERVICE"=>"WFS", "id"=>"wfs", "VERSION"=>"1.0.0", "REQUEST"=>"GetFeature", "typename"=>"places", "SRS"=>"EPSG:4326", "BBOX"=>"-360,-170.10225755961318,360,170.10225755961318"}
+  [4;35;1mSite Load (0.6ms)[0m   [0mSELECT * FROM "sites" WHERE ("sites"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Site with ID=wfs):
+  app/controllers/sites_controller.rb:17:in `show'
+
+Rendered rescues/_trace (62.4ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing SitesController#show (for 127.0.0.1 at 2009-09-25 08:42:05) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mSite Load (3.7ms)[0m   [0;1mSELECT * FROM "sites" WHERE ("sites"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering sites/show
+Completed in 26ms (View: 6, DB: 4) | 200 OK [http://localhost/sites/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing SitesController#sites (for 127.0.0.1 at 2009-09-25 08:42:06) [GET]
+  Parameters: {"id"=>"georss"}
+
+ActionController::UnknownAction (No action responded to sites. Actions: create, destroy, edit, index, new, show, and update):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing SitesController#show (for 127.0.0.1 at 2009-09-25 08:42:06) [GET]
+  Parameters: {"SERVICE"=>"WFS", "id"=>"wfs", "VERSION"=>"1.0.0", "REQUEST"=>"GetFeature", "typename"=>"places", "SRS"=>"EPSG:4326", "BBOX"=>"-360,-170.10225755961318,360,170.10225755961318"}
+  [4;35;1mSite Load (0.5ms)[0m   [0mSELECT * FROM "sites" WHERE ("sites"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Site with ID=wfs):
+  app/controllers/sites_controller.rb:17:in `show'
+
+Rendered rescues/_trace (62.4ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (not_found)
