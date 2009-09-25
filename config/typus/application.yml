@@ -1,0 +1,50 @@
+# Typus Models Configuration File
+#
+# Use the README file on the same folder as this file as a reference to
+# customize this file to your needs.
+
+Building:
+  fields:
+    list: building_type, evidence_type
+    form: building_type, notes, evidence_type
+    show: id, building_type, notes, created_at, updated_at, evidence_type
+  actions:
+    index:
+    edit:
+  order_by:
+  relationships: evidence_type
+  filters:
+  search:
+  application: deca
+  description:
+
+EvidenceType:
+  fields:
+    list: evidence_type
+    form: evidence_type
+    show: id, evidence_type
+  actions:
+    index:
+    edit:
+  order_by:
+  relationships: buildings
+  filters:
+  search:
+  application: deca
+  description:
+
+Site:
+  fields:
+    list: name, lat, lon, site_id, geom
+    form: name, description, lat, lon, site_id, geom
+    show: id, name, description, lat, lon, created_at, updated_at, site_id, geom
+  actions:
+    index:
+    edit:
+  order_by:
+  relationships: 
+  filters:
+  search:
+  application: deca
+  description:
+

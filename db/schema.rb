@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090925111116) do
+ActiveRecord::Schema.define(:version => 20090925210405) do
 
   create_table "buildings", :force => true do |t|
     t.column "building_type", :string
@@ -36,5 +36,19 @@ ActiveRecord::Schema.define(:version => 20090925111116) do
 
   add_index "sites", ["geom"], :name => "index_sites_on_geom", :spatial=> true 
   add_index "sites", ["name"], :name => "index_sites_on_name"
+
+  create_table "typus_users", :force => true do |t|
+    t.column "first_name", :string, :default => "", :null => false
+    t.column "last_name", :string, :default => "", :null => false
+    t.column "role", :string, :null => false
+    t.column "email", :string, :null => false
+    t.column "status", :boolean, :default => false
+    t.column "token", :string, :null => false
+    t.column "salt", :string, :null => false
+    t.column "crypted_password", :string, :null => false
+    t.column "preferences", :string
+    t.column "created_at", :timestamp
+    t.column "updated_at", :timestamp
+  end
 
 end
