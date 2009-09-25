@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  phase_start: 
+  phase_start_span: 
+  phase_end: 
+  phase_end_span: 
+  rooms: 
+  notes: MyText
+
+two:
+  phase_start: 
+  phase_start_span: 
+  phase_end: 
+  phase_end_span: 
+  rooms: 
+  notes: MyText

@@ -390,3 +390,600 @@ and of course install the gem: sudo gem install geokit
   [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
   [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
   [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-09-24 21:46:11) [GET]
+  [4;36;1mSite Load (241.6ms)[0m   [0;1mSELECT * FROM "sites" [0m
+Rendering template within layouts/application
+Rendering sites/index
+Completed in 546ms (View: 227, DB: 242) | 200 OK [http://localhost/sites]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing SitesController#new (for 127.0.0.1 at 2009-09-24 21:46:14) [GET]
+Rendering template within layouts/application
+Rendering sites/new
+Rendered sites/_form (73.6ms)
+Completed in 376ms (View: 103, DB: 0) | 200 OK [http://localhost/sites/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+Yahoo geocoding. Address: 5316 Rockingham Drive, Williamsburg, VA. Result: <?xml version="1.0"?>
+<ResultSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:yahoo:maps" xsi:schemaLocation="urn:yahoo:maps http://api.local.yahoo.com/MapsService/V1/GeocodeResponse.xsd"><Result precision="address"><Latitude>37.322517</Latitude><Longitude>-76.745395</Longitude><Address>5316 Rockingham Dr</Address><City>Williamsburg</City><State>VA</State><Zip>23188-8118</Zip><Country>US</Country></Result></ResultSet>
+<!-- ws01.ydn.re2.yahoo.com uncompressed/chunked Thu Sep 24 18:48:04 PDT 2009 -->
+Google reverse-geocoding. LL: 37.792821,-122.393992. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <name>37.792821,-122.393992</name>
+  <Status>
+    <code>200</code>
+    <request>geocode</request>
+  </Status>
+  <Placemark id="p1">
+    <address>36-98 Mission St, San Francisco, CA 94105, USA</address>
+    <AddressDetails Accuracy="8" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><Country><CountryNameCode>US</CountryNameCode><CountryName>USA</CountryName><AdministrativeArea><AdministrativeAreaName>CA</AdministrativeAreaName><SubAdministrativeArea><SubAdministrativeAreaName>San Francisco</SubAdministrativeAreaName><Locality><LocalityName>San Francisco</LocalityName><Thoroughfare><ThoroughfareName>36-98 Mission St</ThoroughfareName></Thoroughfare><PostalCode><PostalCodeNumber>94105</PostalCodeNumber></PostalCode></Locality></SubAdministrativeArea></AdministrativeArea></Country></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="37.7958557" south="37.7895605" east="-122.3907006" west="-122.3969958" />
+    </ExtendedData>
+    <Point><coordinates>-122.3938629,37.7927197,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="p2">
+    <address>San Francisco, CA 94105, USA</address>
+    <AddressDetails Accuracy="5" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><Country><CountryNameCode>US</CountryNameCode><CountryName>USA</CountryName><AdministrativeArea><AdministrativeAreaName>CA</AdministrativeAreaName><Locality><LocalityName>San Francisco</LocalityName><PostalCode><PostalCodeNumber>94105</PostalCodeNumber></PostalCode></Locality></AdministrativeArea></Country></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="37.7952480" south="37.7818010" east="-122.3843420" west="-122.4034270" />
+    </ExtendedData>
+    <Point><coordinates>-122.3943387,37.7881481,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="p3">
+    <address>South Beach, San Francisco, CA, USA</address>
+    <AddressDetails Accuracy="4" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><Country><CountryNameCode>US</CountryNameCode><CountryName>USA</CountryName><AdministrativeArea><AdministrativeAreaName>CA</AdministrativeAreaName><Locality><LocalityName>San Francisco</LocalityName><DependentLocality><DependentLocalityName>South Beach</DependentLocalityName></DependentLocality></Locality></AdministrativeArea></Country></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="37.7957000" south="37.7775290" east="-122.3876340" west="-122.4034819" />
+    </ExtendedData>
+    <Point><coordinates>-122.3929225,37.7873921,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="p4">
+    <address>Central East, San Francisco, CA, USA</address>
+    <AddressDetails Accuracy="4" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><Country><CountryNameCode>US</CountryNameCode><CountryName>USA</CountryName><AdministrativeArea><AdministrativeAreaName>CA</AdministrativeAreaName><Locality><LocalityName>San Francisco</LocalityName><DependentLocality><DependentLocalityName>Central East</DependentLocalityName></DependentLocality></Locality></AdministrativeArea></Country></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="37.7957000" south="37.7311310" east="-122.3767159" west="-122.4363820" />
+    </ExtendedData>
+    <Point><coordinates>-122.4070834,37.7615966,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="p5">
+    <address>San Francisco, CA, USA</address>
+    <AddressDetails Accuracy="4" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><Country><CountryNameCode>US</CountryNameCode><CountryName>USA</CountryName><AdministrativeArea><AdministrativeAreaName>CA</AdministrativeAreaName><Locality><LocalityName>San Francisco</LocalityName></Locality></AdministrativeArea></Country></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="37.8120000" south="37.7034000" east="-122.3482000" west="-122.5270000" />
+    </ExtendedData>
+    <Point><coordinates>-122.4192090,37.7752060,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="p6">
+    <address>California, USA</address>
+    <AddressDetails Accuracy="2" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><Country><CountryNameCode>US</CountryNameCode><CountryName>USA</CountryName><AdministrativeArea><AdministrativeAreaName>CA</AdministrativeAreaName></AdministrativeArea></Country></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="42.0095190" south="32.5288320" east="-114.1312120" west="-124.4820030" />
+    </ExtendedData>
+    <Point><coordinates>-119.4179324,36.7782610,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="p7">
+    <address>United States</address>
+    <AddressDetails Accuracy="1" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><Country><CountryNameCode>US</CountryNameCode><CountryName>USA</CountryName></Country></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="71.5388000" south="18.7763000" east="-66.8850750" west="170.5957000" />
+    </ExtendedData>
+    <Point><coordinates>-95.7128910,37.0902400,0</coordinates></Point>
+  </Placemark>
+</Response></kml>
+Google reverse-geocoding. LL: 37.322517,-76.745395. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <name>37.322517,-76.745395</name>
+  <Status>
+    <code>200</code>
+    <request>geocode</request>
+  </Status>
+  <Placemark id="p1">
+    <address>5309-5315 Rockingham Dr, Williamsburg, VA 23188, USA</address>
+    <AddressDetails Accuracy="8" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><Country><CountryNameCode>US</CountryNameCode><CountryName>USA</CountryName><AdministrativeArea><AdministrativeAreaName>VA</AdministrativeAreaName><SubAdministrativeArea><SubAdministrativeAreaName>James City</SubAdministrativeAreaName><Locality><LocalityName>Williamsburg</LocalityName><Thoroughfare><ThoroughfareName>5309-5315 Rockingham Dr</ThoroughfareName></Thoroughfare><PostalCode><PostalCodeNumber>23188</PostalCodeNumber></PostalCode></Locality></SubAdministrativeArea></AdministrativeArea></Country></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="37.3255550" south="37.3192598" east="-76.7421777" west="-76.7484729" />
+    </ExtendedData>
+    <Point><coordinates>-76.7453183,37.3223965,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="p2">
+    <address>Powhatan, Virginia, USA</address>
+    <AddressDetails Accuracy="4" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><Country><CountryNameCode>US</CountryNameCode><CountryName>USA</CountryName><AdministrativeArea><AdministrativeAreaName>VA</AdministrativeAreaName><SubAdministrativeArea><SubAdministrativeAreaName>James City</SubAdministrativeAreaName><AddressLine>Powhatan</AddressLine></SubAdministrativeArea></AdministrativeArea></Country></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="37.3737450" south="37.2230570" east="-76.7313910" west="-76.8864260" />
+    </ExtendedData>
+    <Point><coordinates>-76.8490328,37.2633604,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="p3">
+    <address>Williamsburg, VA 23188, USA</address>
+    <AddressDetails Accuracy="5" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><Country><CountryNameCode>US</CountryNameCode><CountryName>USA</CountryName><AdministrativeArea><AdministrativeAreaName>VA</AdministrativeAreaName><Locality><LocalityName>Williamsburg</LocalityName><PostalCode><PostalCodeNumber>23188</PostalCodeNumber></PostalCode></Locality></AdministrativeArea></Country></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="37.4670760" south="37.2491910" east="-76.6006610" west="-76.8830760" />
+    </ExtendedData>
+    <Point><coordinates>-76.7567368,37.3370167,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="p4">
+    <address>James City, Virginia, USA</address>
+    <AddressDetails Accuracy="3" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><Country><CountryNameCode>US</CountryNameCode><CountryName>USA</CountryName><AdministrativeArea><AdministrativeAreaName>VA</AdministrativeAreaName><SubAdministrativeArea><SubAdministrativeAreaName>James City</SubAdministrativeAreaName></SubAdministrativeArea></AdministrativeArea></Country></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="37.4670760" south="37.1538270" east="-76.5779110" west="-76.9158640" />
+    </ExtendedData>
+    <Point><coordinates>-76.8028933,37.3002132,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="p5">
+    <address>Virginia, USA</address>
+    <AddressDetails Accuracy="2" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><Country><CountryNameCode>US</CountryNameCode><CountryName>USA</CountryName><AdministrativeArea><AdministrativeAreaName>VA</AdministrativeAreaName></AdministrativeArea></Country></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="39.4660120" south="36.5407390" east="-75.1664400" west="-83.6754130" />
+    </ExtendedData>
+    <Point><coordinates>-78.6568942,37.4315734,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="p6">
+    <address>United States</address>
+    <AddressDetails Accuracy="1" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><Country><CountryNameCode>US</CountryNameCode><CountryName>USA</CountryName></Country></AddressDetails>
+    <ExtendedData>
+      <LatLonBox north="71.5388000" south="18.7763000" east="-66.8850750" west="170.5957000" />
+    </ExtendedData>
+    <Point><coordinates>-95.7128910,37.0902400,0</coordinates></Point>
+  </Placemark>
+</Response></kml>
+Yahoo geocoding. Address: New York, NY. Result: <?xml version="1.0"?>
+<ResultSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:yahoo:maps" xsi:schemaLocation="urn:yahoo:maps http://api.local.yahoo.com/MapsService/V1/GeocodeResponse.xsd"><Result precision="zip"><Latitude>40.714550</Latitude><Longitude>-74.007124</Longitude><Address></Address><City>New York</City><State>NY</State><Zip></Zip><Country>US</Country></Result></ResultSet>
+<!-- ws02.ydn.re2.yahoo.com uncompressed/chunked Thu Sep 24 18:53:58 PDT 2009 -->
+Yahoo geocoding. Address: Charlottesville, VA. Result: <?xml version="1.0"?>
+<ResultSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:yahoo:maps" xsi:schemaLocation="urn:yahoo:maps http://api.local.yahoo.com/MapsService/V1/GeocodeResponse.xsd"><Result precision="zip"><Latitude>38.032130</Latitude><Longitude>-78.477529</Longitude><Address></Address><City>Charlottesville</City><State>VA</State><Zip></Zip><Country>US</Country></Result></ResultSet>
+<!-- ws04.ydn.re2.yahoo.com uncompressed/chunked Thu Sep 24 18:54:17 PDT 2009 -->
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing MapController#index (for 127.0.0.1 at 2009-09-24 22:06:30) [GET]
+Rendering template within layouts/application
+Rendering map/index
+Completed in 400ms (View: 396, DB: 0) | 200 OK [http://localhost/map]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing MapController#index (for 127.0.0.1 at 2009-09-24 22:09:41) [GET]
+Rendering template within layouts/application
+Rendering map/index
+Completed in 105ms (View: 101, DB: 0) | 200 OK [http://localhost/map]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing MapController#index (for 127.0.0.1 at 2009-09-24 22:14:06) [GET]
+Rendering template within layouts/application
+Rendering map/index
+Completed in 303ms (View: 206, DB: 0) | 200 OK [http://localhost/map]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing MapController#index (for 127.0.0.1 at 2009-09-24 22:17:50) [GET]
+Rendering template within layouts/application
+Rendering map/index
+Completed in 36ms (View: 15, DB: 0) | 200 OK [http://localhost/map]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing MapController#index (for 127.0.0.1 at 2009-09-24 22:18:07) [GET]
+Rendering template within layouts/application
+Rendering map/index
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://localhost/map]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing MapController#index (for 127.0.0.1 at 2009-09-24 22:18:16) [GET]
+Rendering template within layouts/application
+Rendering map/index
+Completed in 7ms (View: 2, DB: 0) | 200 OK [http://localhost/map]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing MapController#index (for 127.0.0.1 at 2009-09-24 22:18:30) [GET]
+Rendering template within layouts/application
+Rendering map/index
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://localhost/map]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing MapController#index (for 127.0.0.1 at 2009-09-24 22:18:48) [GET]
+Rendering template within layouts/application
+Rendering map/index
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://localhost/map]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing MapController#index (for 127.0.0.1 at 2009-09-24 22:19:50) [GET]
+Rendering template within layouts/application
+Rendering map/index
+Completed in 8ms (View: 2, DB: 0) | 200 OK [http://localhost/map]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing MapController#index (for 127.0.0.1 at 2009-09-24 22:21:47) [GET]
+Rendering template within layouts/application
+Rendering map/index
+Completed in 8ms (View: 2, DB: 0) | 200 OK [http://localhost/map]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (31.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to Sites (20090830153533)
+Migrating to AddIndexToSites (20090830170844)
+Migrating to CreateBuildings (20090925103946)
+  [4;35;1mSQL (1.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (722.8ms)[0m   [0;1mCREATE TABLE buildings ("id" serial primary key, "building_type" character varying(255), "evidence_type" character varying(255), "notes" text, "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;35;1mSQL (42.6ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090925103946')[0m
+  [4;36;1mSQL (15.8ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to Sites (20090830153533)
+Migrating to AddIndexToSites (20090830170844)
+Migrating to CreateBuildings (20090925103946)
+Migrating to CreateEvidenceTypes (20090925104423)
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (371.2ms)[0m   [0;1mCREATE TABLE evidence_types ("id" serial primary key, "evidence_type" character varying(255)) [0m
+  [4;35;1mSQL (39.9ms)[0m   [0mINSERT INTO "evidence_types" ("evidence_type") VALUES(E'Archaeological') RETURNING "id"[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO "evidence_types" ("evidence_type") VALUES(E'Documentary') RETURNING "id"[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090925104423')[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (56.2ms)[0m   [0;1mDROP TABLE "buildings"[0m
+  [4;35;1mSQL (10.6ms)[0m   [0mCREATE TABLE buildings ("id" serial primary key, "building_type" character varying(255), "evidence_type" character varying(255), "notes" text, "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mDROP TABLE "evidence_types"[0m
+  [4;35;1mSQL (3.4ms)[0m   [0mCREATE TABLE evidence_types ("id" serial primary key, "evidence_type" character varying(255)) [0m
+  [4;36;1mSQL (4.2ms)[0m   [0;1mDROP TABLE "sites"[0m
+  [4;35;1mSQL (6.4ms)[0m   [0mCREATE TABLE sites ("id" serial primary key, "name" character varying(255) NOT NULL, "description" text, "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;36;1mSQL (329.4ms)[0m   [0;1mSELECT AddGeometryColumn('sites','geom',4326,'POINT',3)[0m
+  [4;35;1mSQL (252.3ms)[0m   [0mCREATE INDEX index_sites_on_geom ON sites USING GIST (geom GIST_GEOMETRY_OPS)[0m
+  [4;36;1mSQL (2.2ms)[0m   [0;1mCREATE INDEX "index_sites_on_name" ON "sites" ("name")[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mINSERT INTO "evidence_types" ("evidence_type") VALUES(E'Archaeological') RETURNING "id"[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO "evidence_types" ("evidence_type") VALUES(E'Documentary') RETURNING "id"[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to Sites (20090830153533)
+Migrating to AddIndexToSites (20090830170844)
+Migrating to CreateBuildings (20090925103946)
+Migrating to CreateEvidenceTypes (20090925104423)
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mINSERT INTO "evidence_types" ("evidence_type") VALUES(E'Archaeological') RETURNING "id"[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO "evidence_types" ("evidence_type") VALUES(E'Documentary') RETURNING "id"[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to Sites (20090830153533)
+Migrating to AddIndexToSites (20090830170844)
+Migrating to CreateBuildings (20090925103946)
+Migrating to CreateEvidenceTypes (20090925104423)
+Migrating to AddSiteIdentifierToSites (20090925111116)
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to Sites (20090830153533)
+Migrating to AddIndexToSites (20090830170844)
+Migrating to CreateBuildings (20090925103946)
+Migrating to CreateEvidenceTypes (20090925104423)
+Migrating to AddSiteIdentifierToSites (20090925111116)
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mALTER TABLE "sites" ADD COLUMN "site_id" character varying(12)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090925111116')[0m
+  [4;36;1mSQL (2.7ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (6.8ms)[0m   [0;1mDROP TABLE "buildings"[0m
+  [4;35;1mSQL (10.4ms)[0m   [0mCREATE TABLE buildings ("id" serial primary key, "building_type" character varying(255), "evidence_type" character varying(255), "notes" text, "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mDROP TABLE "evidence_types"[0m
+  [4;35;1mSQL (3.5ms)[0m   [0mCREATE TABLE evidence_types ("id" serial primary key, "evidence_type" character varying(255)) [0m
+  [4;36;1mSQL (3.9ms)[0m   [0;1mDROP TABLE "sites"[0m
+  [4;35;1mSQL (5.8ms)[0m   [0mCREATE TABLE sites ("id" serial primary key, "name" character varying(255) NOT NULL, "description" text, "created_at" timestamp, "updated_at" timestamp, "site_id" character varying(12)) [0m
+  [4;36;1mSQL (7.9ms)[0m   [0;1mSELECT AddGeometryColumn('sites','geom',4326,'POINT',3)[0m
+  [4;35;1mSQL (4.7ms)[0m   [0mCREATE INDEX index_sites_on_geom ON sites USING GIST (geom GIST_GEOMETRY_OPS)[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mCREATE INDEX "index_sites_on_name" ON "sites" ("name")[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mINSERT INTO "evidence_types" ("evidence_type") VALUES(E'Archaeological') RETURNING "id"[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO "evidence_types" ("evidence_type") VALUES(E'Documentary') RETURNING "id"[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (5.3ms)[0m   [0;1mDROP TABLE "buildings"[0m
+  [4;35;1mSQL (25.9ms)[0m   [0mCREATE TABLE buildings ("id" serial primary key, "building_type" character varying(255), "evidence_type" character varying(255), "notes" text, "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mDROP TABLE "evidence_types"[0m
+  [4;35;1mSQL (3.4ms)[0m   [0mCREATE TABLE evidence_types ("id" serial primary key, "evidence_type" character varying(255)) [0m
+  [4;36;1mSQL (4.2ms)[0m   [0;1mDROP TABLE "sites"[0m
+  [4;35;1mSQL (4.6ms)[0m   [0mCREATE TABLE sites ("id" serial primary key, "name" character varying(255) NOT NULL, "description" text, "created_at" timestamp, "updated_at" timestamp, "site_id" character varying(12)) [0m
+  [4;36;1mSQL (7.0ms)[0m   [0;1mSELECT AddGeometryColumn('sites','geom',4326,'POINT',3)[0m
+  [4;35;1mSQL (4.8ms)[0m   [0mCREATE INDEX index_sites_on_geom ON sites USING GIST (geom GIST_GEOMETRY_OPS)[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mCREATE INDEX "index_sites_on_name" ON "sites" ("name")[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mINSERT INTO "evidence_types" ("evidence_type") VALUES(E'Archaeological') RETURNING "id"[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO "evidence_types" ("evidence_type") VALUES(E'Documentary') RETURNING "id"[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (3.6ms)[0m   [0;1mDROP TABLE "buildings"[0m
+  [4;35;1mSQL (6.5ms)[0m   [0mCREATE TABLE buildings ("id" serial primary key, "building_type" character varying(255), "evidence_type" character varying(255), "notes" text, "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;36;1mSQL (2.5ms)[0m   [0;1mDROP TABLE "evidence_types"[0m
+  [4;35;1mSQL (3.7ms)[0m   [0mCREATE TABLE evidence_types ("id" serial primary key, "evidence_type" character varying(255)) [0m
+  [4;36;1mSQL (3.6ms)[0m   [0;1mDROP TABLE "sites"[0m
+  [4;35;1mSQL (17.8ms)[0m   [0mCREATE TABLE sites ("id" serial primary key, "name" character varying(255) NOT NULL, "description" text, "created_at" timestamp, "updated_at" timestamp, "site_id" character varying(12)) [0m
+  [4;36;1mSQL (8.2ms)[0m   [0;1mSELECT AddGeometryColumn('sites','geom',4326,'POINT',3)[0m
+  [4;35;1mSQL (4.9ms)[0m   [0mCREATE INDEX index_sites_on_geom ON sites USING GIST (geom GIST_GEOMETRY_OPS)[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mCREATE INDEX "index_sites_on_name" ON "sites" ("name")[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mINSERT INTO "evidence_types" ("evidence_type") VALUES(E'Archaeological') RETURNING "id"[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO "evidence_types" ("evidence_type") VALUES(E'Documentary') RETURNING "id"[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (5.5ms)[0m   [0;1mDROP TABLE "buildings"[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mCREATE TABLE buildings ("id" serial primary key, "building_type" character varying(255), "evidence_type" character varying(255), "notes" text, "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mDROP TABLE "evidence_types"[0m
+  [4;35;1mSQL (3.4ms)[0m   [0mCREATE TABLE evidence_types ("id" serial primary key, "evidence_type" character varying(255)) [0m
+  [4;36;1mSQL (3.5ms)[0m   [0;1mDROP TABLE "sites"[0m
+  [4;35;1mSQL (4.8ms)[0m   [0mCREATE TABLE sites ("id" serial primary key, "name" character varying(255) NOT NULL, "description" text, "created_at" timestamp, "updated_at" timestamp, "site_id" character varying(12)) [0m
+  [4;36;1mSQL (9.1ms)[0m   [0;1mSELECT AddGeometryColumn('sites','geom',4326,'POINT',3)[0m
+  [4;35;1mSQL (6.0ms)[0m   [0mCREATE INDEX index_sites_on_geom ON sites USING GIST (geom GIST_GEOMETRY_OPS)[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mCREATE INDEX "index_sites_on_name" ON "sites" ("name")[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mINSERT INTO "evidence_types" ("evidence_type") VALUES(E'Archaeological') RETURNING "id"[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO "evidence_types" ("evidence_type") VALUES(E'Documentary') RETURNING "id"[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (6.0ms)[0m   [0;1mCREATE TABLE schema_migrations ("version" character varying(255) NOT NULL) [0m
+  [4;35;1mSQL (2.3ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to Sites (20090830153533)
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (19.1ms)[0m   [0;1mCREATE TABLE sites ("id" serial primary key, "name" character varying(255) NOT NULL, "description" text, "lat" decimal(15,10), "lon" decimal(15,10), "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;35;1mSQL (7.2ms)[0m   [0mSELECT AddGeometryColumn('sites','geom',4326,'POINT',3)[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090830153533')[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mCOMMIT[0m
+Migrating to AddIndexToSites (20090830170844)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (4.2ms)[0m   [0mCREATE INDEX index_sites_on_geom ON sites USING GIST (geom GIST_GEOMETRY_OPS)[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mCREATE INDEX "index_sites_on_name" ON "sites" ("name")[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090830170844')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCOMMIT[0m
+Migrating to CreateBuildings (20090925103946)
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (3.8ms)[0m   [0;1mCREATE TABLE buildings ("id" serial primary key, "building_type" character varying(255), "evidence_type_id" integer, "notes" text, "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090925103946')[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mCOMMIT[0m
+Migrating to CreateEvidenceTypes (20090925104423)
+  [4;35;1mSQL (0.5ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (2.7ms)[0m   [0;1mCREATE TABLE evidence_types ("id" serial primary key, "evidence_type" character varying(255)) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090925104423')[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mCOMMIT[0m
+Migrating to AddSiteIdentifierToSites (20090925111116)
+  [4;35;1mSQL (0.4ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mALTER TABLE "sites" ADD COLUMN "site_id" character varying(12)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090925111116')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mINSERT INTO "evidence_types" ("evidence_type") VALUES(E'Archaeological') RETURNING "id"[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO "evidence_types" ("evidence_type") VALUES(E'Documentary') RETURNING "id"[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mINSERT INTO "evidence_types" ("evidence_type") VALUES(E'Archaeological') RETURNING "id"[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO "evidence_types" ("evidence_type") VALUES(E'Documentary') RETURNING "id"[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mINSERT INTO "evidence_types" ("evidence_type") VALUES(E'Archaeological') RETURNING "id"[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO "evidence_types" ("evidence_type") VALUES(E'Documentary') RETURNING "id"[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (5.3ms)[0m   [0mINSERT INTO "sites" ("name", "lon", "created_at", "updated_at", "description", "lat", "geom", "site_id") VALUES(E'Middle Plantation 1', -76.5768, '2009-09-25 11:38:27.602584', '2009-09-25 11:38:27.602584', NULL, 38.89477, NULL, E'18AN46') RETURNING "id"[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO "sites" ("name", "lon", "created_at", "updated_at", "description", "lat", "geom", "site_id") VALUES(E'Shields Tavern site', -76.70856, '2009-09-25 11:38:27.677537', '2009-09-25 11:38:27.677537', NULL, 37.27002, NULL, E'18VA005') RETURNING "id"[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO "sites" ("name", "lon", "created_at", "updated_at", "description", "lat", "geom", "site_id") VALUES(E'Glebe House', -75.7947, '2009-09-25 11:38:27.681639', '2009-09-25 11:38:27.681639', NULL, 37.5686, NULL, E'18VA007') RETURNING "id"[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO "sites" ("name", "lon", "created_at", "updated_at", "description", "lat", "geom", "site_id") VALUES(E'Thomas Cornwaley''s Houses', -76.43238, '2009-09-25 11:38:27.685664', '2009-09-25 11:38:27.685664', NULL, 38.18744, NULL, E'18MD065') RETURNING "id"[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-09-25 08:15:41) [GET]
+  [4;36;1mSite Load (64.5ms)[0m   [0;1mSELECT * FROM "sites" [0m
+Rendering template within layouts/application
+Rendering sites/index
+
+ActionView::TemplateError (undefined local variable or method `post' for #<ActionView::Base:0x103777c30>) on line #14 of app/views/sites/index.html.erb:
+11: 		<td><%= h site.name %></td>
+12: 		<td><%= h site.geom %></td>
+13: 		<td><%= link_to 'Show', site %></td>
+14: 		<td><%= link_to 'Edit', edit_site_path(post) %></td>
+15: 		<td><%= link_to 'Destroy', site, :confirm => 'Are you sure?', :method => :delete %></td>
+16: 	</tr>
+17: 	<% end %>
+
+    app/views/sites/index.html.erb:14
+    app/views/sites/index.html.erb:9:in `each'
+    app/views/sites/index.html.erb:9
+    app/controllers/sites_controller.rb:7:in `index'
+
+Rendered rescues/_trace (229.2ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-09-25 08:17:52) [GET]
+  [4;35;1mSite Load (4.7ms)[0m   [0mSELECT * FROM "sites" [0m
+Rendering template within layouts/application
+Rendering sites/index
+Completed in 59ms (View: 43, DB: 5) | 200 OK [http://localhost/sites]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing SitesController#show (for 127.0.0.1 at 2009-09-25 08:17:56) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mSite Load (3.8ms)[0m   [0;1mSELECT * FROM "sites" WHERE ("sites"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering sites/show
+Completed in 48ms (View: 28, DB: 4) | 200 OK [http://localhost/sites/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-09-25 08:18:34) [GET]
+  [4;35;1mSite Load (4.8ms)[0m   [0mSELECT * FROM "sites" [0m
+Rendering template within layouts/application
+Rendering sites/index
+Completed in 148ms (View: 123, DB: 5) | 200 OK [http://localhost/sites]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing SitesController#show (for 127.0.0.1 at 2009-09-25 08:18:49) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mSite Load (3.7ms)[0m   [0;1mSELECT * FROM "sites" WHERE ("sites"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering sites/show
+Completed in 25ms (View: 5, DB: 4) | 200 OK [http://localhost/sites/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing SitesController#show (for 127.0.0.1 at 2009-09-25 08:20:11) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSite Load (3.7ms)[0m   [0mSELECT * FROM "sites" WHERE ("sites"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering sites/show
+Completed in 31ms (View: 12, DB: 4) | 200 OK [http://localhost/sites/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing SitesController#edit (for 127.0.0.1 at 2009-09-25 08:20:39) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mSite Load (3.6ms)[0m   [0;1mSELECT * FROM "sites" WHERE ("sites"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering sites/edit
+Rendered sites/_form (48.9ms)
+Completed in 141ms (View: 122, DB: 4) | 200 OK [http://localhost/sites/1/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing SitesController#edit (for 127.0.0.1 at 2009-09-25 08:21:21) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSite Load (3.7ms)[0m   [0mSELECT * FROM "sites" WHERE ("sites"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering sites/edit
+Rendered sites/_form (12.2ms)
+Completed in 40ms (View: 21, DB: 4) | 200 OK [http://localhost/sites/1/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing SitesController#update (for 127.0.0.1 at 2009-09-25 08:21:54) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"kguT+WrzYbpiQZC94izMEkb/cka60JMDL9o083lUOVc=", "id"=>"1", "site"=>{"lon"=>"-76.5768000000", "name"=>"Middle Plantation 1", "description"=>"Middle Plantation in present day Williamsburg", "lat"=>"38.8947700000", "geom"=>""}}
+  [4;36;1mSite Load (3.9ms)[0m   [0;1mSELECT * FROM "sites" WHERE ("sites"."id" = 1) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mSite Update (0.6ms)[0m   [0;1mUPDATE "sites" SET "updated_at" = '2009-09-25 12:21:54.149922', "description" = E'Middle Plantation in present day Williamsburg' WHERE "id" = 1[0m
+  [4;35;1mSQL (25.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/sites/1
+Completed in 67ms (DB: 30) | 302 Found [http://localhost/sites/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing SitesController#show (for 127.0.0.1 at 2009-09-25 08:21:54) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mSite Load (4.0ms)[0m   [0;1mSELECT * FROM "sites" WHERE ("sites"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering sites/show
+Completed in 27ms (View: 6, DB: 4) | 200 OK [http://localhost/sites/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-09-25 08:22:03) [GET]
+  [4;35;1mSite Load (4.9ms)[0m   [0mSELECT * FROM "sites" [0m
+Rendering template within layouts/application
+Rendering sites/index
+Completed in 52ms (View: 36, DB: 5) | 200 OK [http://localhost/sites]

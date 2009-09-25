@@ -9,14 +9,29 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090830170844) do
+ActiveRecord::Schema.define(:version => 20090925111116) do
+
+  create_table "buildings", :force => true do |t|
+    t.column "building_type", :string
+    t.column "evidence_type_id", :integer
+    t.column "notes", :text
+    t.column "created_at", :timestamp
+    t.column "updated_at", :timestamp
+  end
+
+  create_table "evidence_types", :force => true do |t|
+    t.column "evidence_type", :string
+  end
 
   create_table "sites", :force => true do |t|
     t.column "name", :string, :null => false
     t.column "description", :text
+    t.column "lat", :decimal, :precision => 15, :scale => 10
+    t.column "lon", :decimal, :precision => 15, :scale => 10
     t.column "created_at", :timestamp
     t.column "updated_at", :timestamp
     t.column "geom", :point, :srid => 4326, :with_z => true
+    t.column "site_id", :string, :limit => 12
   end
 
   add_index "sites", ["geom"], :name => "index_sites_on_geom", :spatial=> true 

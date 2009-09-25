@@ -3,15 +3,15 @@
 <table>
 	<tr>
 		<th>Name</th>
-		<th>Geometry</th>
+		<th>Location</th>
 	</tr>
 	
 	<% @sites.each do |site| %>
 	<tr>
 		<td><%= h site.name %></td>
-		<td><%= h site.geom %></td>
+		<td>(<%= h site.lat %>, <%= h site.lon %>)</td>
 		<td><%= link_to 'Show', site %></td>
-		<td><%= link_to 'Edit', edit_site_path(post) %></td>
+		<td><%= link_to 'Edit', edit_site_path(site) %></td>
 		<td><%= link_to 'Destroy', site, :confirm => 'Are you sure?', :method => :delete %></td>
 	</tr>
 	<% end %>
