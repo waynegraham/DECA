@@ -30,8 +30,8 @@ ActiveRecord::Schema.define(:version => 20090925111116) do
     t.column "lon", :decimal, :precision => 15, :scale => 10
     t.column "created_at", :timestamp
     t.column "updated_at", :timestamp
-    t.column "geom", :point, :srid => 4326, :with_z => true
     t.column "site_id", :string, :limit => 12
+    t.column "geom", :point, :srid => 4326, :with_z => true
   end
 
   add_index "sites", ["geom"], :name => "index_sites_on_geom", :spatial=> true 

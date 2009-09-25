@@ -1,5 +1,6 @@
 <html>
 <head>
+	<%= auto_discovery_link_tag(:rss, :action => 'feed')%>
 	<%= map_layers_includes :google => 
   "ABQIAAAA3HdfrnxFAPWyY-aiJUxmqRTJQa0g3IQ9GZqIMmInSLzwtGDKaBQ0KYLwBEKSM7F9gCevcsIf6WPuIQ", 	
 	:multimap => "metacarta_04", :virtualearth => true, :yahoo => "euzuro-openlayers", :openstreetmap => 'OPENSTREETMAP' %>
