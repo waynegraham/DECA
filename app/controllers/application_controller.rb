@@ -7,4 +7,17 @@ class ApplicationController < ActionController::Base
 
   # Scrub sensitive parameters from your log
   # filter_parameter_logging :password
+  
+  private 
+  def cache(key)
+    begin
+      unless output = CACHE.get(key)
+        output = yield
+        CACHE.set(key, output)
+      end
+      return output
+    rescue MemCache::MemCacheError
+      yield
+    end
+  end
 end

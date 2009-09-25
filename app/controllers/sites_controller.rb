@@ -6,10 +6,10 @@ class SitesController < ApplicationController
 
     respond_to do |format|
       format.html # index.html.erb
+      format.rss
       format.xml  { render :xml => @sites }
     end
   end
-  
 
   # GET /sites/1
   # GET /sites/1.xml
@@ -20,7 +20,6 @@ class SitesController < ApplicationController
         # Available layers include
         #GOOGLE_SATELLITE, GOOGLE_HYBRID, GOOGLE_PHYSICAL, VE_ROAD, VE_AERIAL, VE_HYBRID, YAHOO, YAHOO_SATELLITE, YAHOO_HYBRID, 
         # MULTIMAP, OPENSTREETMAP, GEOPOLE_OSM, NASA_GLOBAL_MOSAIC, BLUE_MARBLE_NG, WORLDWIND, WORLDWIND_URBAN, WORLDWIND_BATHY
-
 
         page << map.add_layer(MapLayers::GOOGLE_PHYSICAL)
         page << map.add_layer(MapLayers::GEOPOLE_OSM)
